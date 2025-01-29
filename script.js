@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const foodData = [
-        { id: 1, name: "Home Made Pizza", price: "₹190", rating: "4.7", time: "50-79 min", img: "images/piza.jpeg", discount: "0%" },
-        { id: 2, name: "Pasta Delight", price: "₹220", rating: "4.5", time: "30-60 min", img: "images/pasta.jpeg", discount: "50%" },
-        { id: 3, name: "Burger Special", price: "₹150", rating: "4.8", time: "25-50 min", img: "images/burger.jpg", discount: "0%" },
-        { id: 4, name: "Veggie Platter", price: "₹180", rating: "4.6", time: "40-70 min", img: "images/veggie.jpeg", discount: "15%" },
-        { id: 5, name: "Tandoori Chicken", price: "₹184", rating: "4.3", time: "15-29 min", img: "images/tandoori.jpeg", discount: "0%" },
-        { id: 6, name: "Chilli Chicken", price: "₹116", rating: "4.1", time: "30-40 min", img: "images/chilli.jpeg" , discount: "0%" },
-        { id: 7, name: "Paneer Tikka", price: "₹200", rating: "4.6", time: "20-40 min", img: "images/paneer.jpg" , discount: "20%" },
-        { id: 8, name: "Veg Biryani", price: "₹170", rating: "4.4", time: "40-60 min", img: "images/biryani.jpg" , discount: "0%" },
-        { id: 9, name: "Chicken Curry", price: "₹250", rating: "4.7", time: "45-75 min", img: "images/chicken.jpeg" , discount: "0%" },
-        { id: 10, name: "Paneer Masala", price: "₹200", rating: "4.6", time: "20-40 min", img: "images/paneerm.jpeg" , discount: "30%" },
-        { id: 11, name: "Veg Rice", price: "₹170", rating: "4.4", time: "40-60 min", img: "images/biryani.jpg" , discount: "0%" },
-        { id: 12, name: "BBQ Chicken", price: "₹250", rating: "4.7", time: "45-75 min", img: "images/bbq.jpeg" , discount: "20%" },
+        { id: 1, name: "Home Made Pizza", price: "₹190", rating: "4.7", time: "50-79 min", img: "/piza.jpeg", discount: "0%" },
+        { id: 2, name: "Pasta Delight", price: "₹220", rating: "4.5", time: "30-60 min", img: "/pasta.jpeg", discount: "50%" },
+        { id: 3, name: "Burger Special", price: "₹150", rating: "4.8", time: "25-50 min", img: "/burger.jpg", discount: "0%" },
+        { id: 4, name: "Veggie Platter", price: "₹180", rating: "4.6", time: "40-70 min", img: "/veggie.jpeg", discount: "15%" },
+        { id: 5, name: "Tandoori Chicken", price: "₹184", rating: "4.3", time: "15-29 min", img: "/tandoori.jpeg", discount: "0%" },
+        { id: 6, name: "Chilli Chicken", price: "₹116", rating: "4.1", time: "30-40 min", img: "/chilli.jpeg" , discount: "0%" },
+        { id: 7, name: "Paneer Tikka", price: "₹200", rating: "4.6", time: "20-40 min", img: "/paneer.jpg" , discount: "20%" },
+        { id: 8, name: "Veg Biryani", price: "₹170", rating: "4.4", time: "40-60 min", img: "/biryani.jpg" , discount: "0%" },
+        { id: 9, name: "Chicken Curry", price: "₹250", rating: "4.7", time: "45-75 min", img: "/chicken.jpeg" , discount: "0%" },
+        { id: 10, name: "Paneer Masala", price: "₹200", rating: "4.6", time: "20-40 min", img: "/paneerm.jpeg" , discount: "30%" },
+        { id: 11, name: "Veg Rice", price: "₹170", rating: "4.4", time: "40-60 min", img: "/biryani.jpg" , discount: "0%" },
+        { id: 12, name: "BBQ Chicken", price: "₹250", rating: "4.7", time: "45-75 min", img: "/bbq.jpeg" , discount: "20%" },
     ];
 
     const foodGrid = document.getElementById('food-grid');
@@ -143,15 +143,15 @@ pauseBtn.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const foodData = [
-        { id: 1, name: "Home Made Pizza", price: "₹190", rating: "4.7", time: "50-79 min", img: "images/piza.jpeg", discount: "0%" },
-        { id: 2, name: "Pasta Delight", price: "₹220", rating: "4.5", time: "30-60 min", img: "images/pasta.jpeg", discount: "50%" },
-        { id: 3, name: "Burger Special", price: "₹150", rating: "4.8", time: "25-50 min", img: "images/burger.jpg", discount: "0%" },
-        { id: 4, name: "Veggie Platter", price: "₹180", rating: "4.6", time: "40-70 min", img: "images/veggie.jpeg", discount: "15%" },
-        { id: 5, name: "Tandoori Chicken", price: "₹184", rating: "4.3", time: "15-29 min", img: "images/tandoori.jpeg", discount: "0%" },
-        { id: 6, name: "Chilli Chicken", price: "₹116", rating: "4.1", time: "30-40 min", img: "images/chilli.jpeg" , discount: "0%" },
-        { id: 7, name: "Paneer Tikka", price: "₹200", rating: "4.6", time: "20-40 min", img: "images/paneer.jpg" , discount: "20%" },
-        { id: 8, name: "Veg Biryani", price: "₹170", rating: "4.4", time: "40-60 min", img: "images/biryani.jpg" , discount: "0%" },
-        { id: 9, name: "Chicken Curry", price: "₹250", rating: "4.7", time: "45-75 min", img: "images/chicken.jpeg" , discount: "0%" },
+        { id: 1, name: "Home Made Pizza", price: "₹190", rating: "4.7", time: "50-79 min", img: "/piza.jpeg", discount: "0%" },
+        { id: 2, name: "Pasta Delight", price: "₹220", rating: "4.5", time: "30-60 min", img: "/pasta.jpeg", discount: "50%" },
+        { id: 3, name: "Burger Special", price: "₹150", rating: "4.8", time: "25-50 min", img: "/burger.jpg", discount: "0%" },
+        { id: 4, name: "Veggie Platter", price: "₹180", rating: "4.6", time: "40-70 min", img: "/veggie.jpeg", discount: "15%" },
+        { id: 5, name: "Tandoori Chicken", price: "₹184", rating: "4.3", time: "15-29 min", img: "/tandoori.jpeg", discount: "0%" },
+        { id: 6, name: "Chilli Chicken", price: "₹116", rating: "4.1", time: "30-40 min", img: "/chilli.jpeg" , discount: "0%" },
+        { id: 7, name: "Paneer Tikka", price: "₹200", rating: "4.6", time: "20-40 min", img: "/paneer.jpg" , discount: "20%" },
+        { id: 8, name: "Veg Biryani", price: "₹170", rating: "4.4", time: "40-60 min", img: "/biryani.jpg" , discount: "0%" },
+        { id: 9, name: "Chicken Curry", price: "₹250", rating: "4.7", time: "45-75 min", img: "/chicken.jpeg" , discount: "0%" },
     ];
 
     const carouselTrack = document.getElementById('carousel-track');
