@@ -33,16 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="food-card-footer">
                     <div class="food-rating">
-                        <img class="star" src="images/star.png" alt="star">
+                        <img class="star" src="/star.png" alt="star">
                         <div class="rate">${item.rating}</div>
                         <div class="food-time"><div class="p">${item.time}</div></div>
                     </div>
                     <div class="add-remove-btn">
                         <button id="minus-${item.id}" class="minus-btn" onclick="decreasedCount(${item.id})" style="display: none;">
-                            <img src="images/minus.png"/>
+                            <img src="/minus.png"/>
                         </button>
                         <span id="count-${item.id}" style="display: none;">0</span>
-                        <button id="plus-${item.id}" class="plus-btn" onclick="increasedCount(${item.id})"><img src="images/add.png"/></button>
+                        <button id="plus-${item.id}" class="plus-btn" onclick="increasedCount(${item.id})"><img src="/add.png"/></button>
                     </div>
                 </div>
             </div>
@@ -177,16 +177,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="food-card-footer">
                     <div class="food-rating">
-                        <img class="star" src="images/star.png" alt="star">
+                        <img class="star" src="/star.png" alt="star">
                         <div class="rate">${item.rating}</div>
                         <div class="food-time"><div class="p">${item.time}</div></div>
                     </div>
                     <div class="add-remove-btn2">
                         <button id="minuss-${item.id}" class="minus-btn" onclick="decreaseCount(${item.id})" style="display: none;">
-                            <img src="images/minus.png"/>
+                            <img src="/minus.png"/>
                         </button>
                         <span id="counts-${item.id}" style="display: none;">0</span>
-                        <button id="pluss-${item.id}" class="plus-btn" onclick="increaseCount(${item.id})"><img src="images/add.png"/></button>
+                        <button id="pluss-${item.id}" class="plus-btn" onclick="increaseCount(${item.id})"><img src="/add.png"/></button>
                     </div>
                 </div>
             </div>
@@ -228,8 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const prevBtn = document.getElementById('prevBtn');
                 const nextBtn = document.getElementById('nextBtn');
 
-                document.getElementById('prevBtnImg').src = currentIndex === 0 ? "images/gleft.png" : "images/wleft.png";
-                document.getElementById('nextBtnImg').src = currentIndex === maxIndex ? "images/play1.png" : "images/play.png";
+                document.getElementById('prevBtnImg').src = currentIndex === 0 ? "/gleft.png" : "/wleft.png";
+                document.getElementById('nextBtnImg').src = currentIndex === maxIndex ? "/play1.png" : "/play.png";
 
                 if (currentIndex === 0) {
                     prevBtn.style.backgroundColor = "white";  
