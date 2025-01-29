@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JTGeats</title>
+</head>
+<body>
+    <div class="first">
+        <div class="navbar">
+            <nav>
+                <div class="logo">JTGeats</div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="nav-icons">
+                    <button class="icon-button" onclick="openSearchModal()">
+                        <img src="images/search.png" alt="search">
+                    </button>
+                    <button class="icon-button" onclick="openCartModal()">
+                        <div class="cart-icon">
+                            <img src="images/cart.png" alt="cart">
+                            <span class="cart-dot"></span>
+                        </div>
+                    </button>
+                </div>                
+            </nav>
+        </div>
+        <div class="contents">
+            <div class="typography">
+                <div>
+                    <p class="auth">Authentic Home <br/>food in India</p>
+                    <p class="jtg">
+                        JTGeats is a courier service in which authentic home <br /> cooked food is delivered to a customer. 
+                    </p>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search food you love">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="image" src="/images/image.png" alt="img"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second">
+        <p class="home">Home Kitchen</p>
+        <div class="food-grid" id="food-grid"></div>
+        <p class="po">Popular items</p>
+        <div class="carousel-container">
+            <button class="nav-btn left" id="prevBtn" onclick="moveCarousel(-1)">
+                <img id="prevBtnImg" src="images/gleft.png">
+            </button>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track"></div>
+            </div>
+            <button class="nav-btn right" id="nextBtn" onclick="moveCarousel(1)">
+                <img id="nextBtnImg" src="images/play.png">
+            </button>
+        </div>
+        <div id="b">
+            <button class="b" onclick="openSearchModal()">Request a Dish</button>
+        </div>
+    </div>
+    <div id="searchModal" class="modal2" style="display: none;">
+        <div class="modal2-content">
+            <h1 style="font-weight: 800;">Request a Dish</h1>
+            <div class="insert">  
+                <span>
+                    <p class="name">Name*</p>
+                    <input type="text" placeholder="Enter name of the dish" required/>
+                </span>
+                <span>
+                    <p class="upload">Upload an image</p>
+                    <input type="url" placeholder="paste a url"/>
+                </span>
+            </div>
+            <div class="but">
+                <button class="cancel" onclick="closeSearchModal()">Cancel</button>
+                <button class="submit" onclick="closeSearchModal()">Submit Request</button>
+            </div> 
+        </div>
+    </div>
+    <div id="cartModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h1>Cart is Empty</h1>
+            <p>Add some items to the cart to checkout</p>
+            <button class="close" onclick="closeCartModal()">Back to Menu</button>
+        </div>
+    </div>
+
+    <div class="third">
+        <div class="third-container">
+            <div class="paragraph">
+                <p class="we">We are providing best <br/>home cooked food delivery service.</p>
+                <p class="away">Away from home and craving the tasty homemade recipes? <br/>Choose from a selection of our delicious home cooked dishes </p>
+            </div>
+            <div class="video-container">
+                <video id="myVideo" src="/images/video.mp4" controls></video>
+                <button id="playBtn" class="control-btn">
+                    <img src="/images/play.png" alt="Play">
+                </button>
+                <button id="pauseBtn" class="control-btn hidden">
+                    <img src="/images/pause (1).png" alt="Pause">
+                </button>
+            </div>
+        </div>
+        <div class="navbar3">
+        </div>
+    </div>
+
+    <div class="fourth">
+        <div class="fourth-content">
+            <p class="par">Do you have a question <br>or want to become a seller?</p>
+            <p class="for">Fill this form and our manager will contact you in the next 48 hours.</p>
+            <div class="you">
+                <div class="fs">
+                    <div>
+                        <input type="text" class="fint" placeholder="Your name" />
+                    </div>
+                    <div>
+                        <input type="email" class="sint" placeholder="Your email" />
+                    </div>
+                </div>
+                <div>
+                    <textarea placeholder="Your message"></textarea>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="im">
+            <img src="/images/bike.png" alt="bike" />
+        </div>
+        <div class="navbar2">
+            <nav>
+                <div class="logo">JTGeats</div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-icons">
+                    <button class="icon-butto">
+                        <img class="f" src="images/f.jpeg" alt="search">
+                    </button>
+                    <button class="icon-butto">
+                        <img class="insta" src="images/insta.png" alt="cart">
+                    </button>
+                </div>
+            </nav>
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
